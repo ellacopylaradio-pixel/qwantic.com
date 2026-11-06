@@ -1,0 +1,14 @@
+G1FabLab — astroportd
+Présentation de travail — 6 novembre 2026
+
+Le G1FabLab intervient sur des communs numériques sous licences libres et prépare le déploiement d’astroportd, aux côtés de Duniter.
+
+Issu des expérimentations d’Astroport.ONE (Bash, Python et services séparés), astroportd rassemble en Rust des fonctions de station personnelle : stockage chiffré uCloud, partage de photos FaceCloud, relais Nostr et coopération entre stations.
+
+Le logiciel est en préversion 0.5.5-beta dans le dépôt analysé. Les usages décrits ne valent pas attestation de déploiement. Les fiches terrain seront publiées avec statut, date et sources.
+
+Sources : https://github.com/papiche/astroportd
+Soutien collectif : https://opencollective.com/monnaie-libre
+Contact presse : en attente de validation ; consulter la page publique du collectif.
+
+Illustration disponible : assets/station.svg, créée avec Anatomy, licence MIT ; dessin pédagogique, aucune station réelle représentée.

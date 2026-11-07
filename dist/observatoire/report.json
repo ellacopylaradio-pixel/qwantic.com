@@ -1,0 +1,916 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-07T00:35:16+00:00",
+  "base": "7e129f44893044108fbd5b48a1353422b7528015",
+  "head": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+  "commits": [
+    {
+      "sha": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+      "date": "2026-11-03T21:06:29+01:00",
+      "subject": "Tu es l'Architecte Principal et Lead Product Engineer d'ASTROPORT.ONE, un écosystème logiciel souverain, décentralisé et sans tiers de confiance, propulsé par le démon tout-en-un écrit en Rust : `astroportd`."
+    },
+    {
+      "sha": "aa7cd4d1cb4180cefe92a93981a5c223acf5c11b",
+      "date": "2026-11-03T19:54:22+01:00",
+      "subject": "0.5.5-beta : robustesse, arrivée du Capitaine, liens d'accueil, station marraine"
+    },
+    {
+      "sha": "63db1b5ddf3b14f89b76efd554c23e784dcb6894",
+      "date": "2026-11-03T16:20:16+01:00",
+      "subject": "0.5.4-beta : Personnes et Contacts réunis, visio sans tiers, traductions par écran"
+    }
+  ],
+  "files": [
+    {
+      "status": "M",
+      "path": "CLAUDE.md"
+    },
+    {
+      "status": "M",
+      "path": "Cargo.lock"
+    },
+    {
+      "status": "M",
+      "path": "Cargo.toml"
+    },
+    {
+      "status": "M",
+      "path": "README.md"
+    },
+    {
+      "status": "M",
+      "path": "RELEASE_NOTES.md"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-core/src/activity.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-crypto/src/nip59.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-db/src/lib.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-db/src/schema.sql"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-duniter/src/chain.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-duniter/src/pool.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-facecloud/src/board.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-facecloud/src/pipeline.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-facecloud/src/review.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-facecloud/tests/board.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-facecloud/tests/facecloud.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-nostr-proto/src/lib.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/Cargo.toml"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/src/api.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/src/web.rs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/tests/cockpit_rules.mjs"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/tests/lang_parts.mjs"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/app.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/index.html"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-account.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-book.css"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-call.css"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-call.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-card.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-chat.css"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-chat.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-cockpit.css"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-cockpit.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-contacts.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-coop.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-framed.css"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-framed.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-home.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-en-account.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-en-billets.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-en-call.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-en-contacts.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-en-options.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-en-sync.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-lang-en.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-es-account.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-es-billets.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-es-call.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-es-contacts.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-es-options.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-lang-es-sync.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-lang-es.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-library.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-people.css"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/m-people.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-review.js"
+    },
+    {
+      "status": "A",
+      "path": "crates/astro-ui/web/m-who.js"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/register.html"
+    },
+    {
+      "status": "M",
+      "path": "crates/astro-ui/web/register.js"
+    },
+    {
+      "status": "M",
+      "path": "docs/GUIDE.md"
+    },
+    {
+      "status": "M",
+      "path": "docs/index.html"
+    },
+    {
+      "status": "A",
+      "path": "examples/turn_relay.rs"
+    },
+    {
+      "status": "M",
+      "path": "install.sh"
+    },
+    {
+      "status": "M",
+      "path": "src/address_book.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/billet.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/chat.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/constellation.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/coop_config.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/first_run.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/hosting_fee.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/identity_links.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/init.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/invites.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/legacy_ucloud.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/lib.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/main.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/presence.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/primal_init.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/register.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/serve.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/settlement.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/sponsor.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/station.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/station_domain.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/stun.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/turn.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/ui_backend.rs"
+    },
+    {
+      "status": "A",
+      "path": "src/welcome.rs"
+    },
+    {
+      "status": "M",
+      "path": "src/zen_react.rs"
+    },
+    {
+      "status": "M",
+      "path": "tests/address_book.rs"
+    },
+    {
+      "status": "M",
+      "path": "tests/chat.rs"
+    },
+    {
+      "status": "M",
+      "path": "tests/identity_links.rs"
+    },
+    {
+      "status": "A",
+      "path": "tests/presence.rs"
+    },
+    {
+      "status": "A",
+      "path": "tests/stun.rs"
+    },
+    {
+      "status": "A",
+      "path": "tests/turn.rs"
+    },
+    {
+      "status": "M",
+      "path": "tests/ui_e2e.rs"
+    }
+  ],
+  "modules": [
+    {
+      "name": "astro-bro",
+      "manifest": "crates/astro-bro/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-crypto",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-core",
+      "manifest": "crates/astro-core/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 1
+    },
+    {
+      "name": "astro-crypto",
+      "manifest": "crates/astro-crypto/Cargo.toml",
+      "dependencies": [
+        "astro-nostr-proto"
+      ],
+      "changed_files": 1
+    },
+    {
+      "name": "astro-dav",
+      "manifest": "crates/astro-dav/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-db",
+      "manifest": "crates/astro-db/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 2
+    },
+    {
+      "name": "astro-duniter",
+      "manifest": "crates/astro-duniter/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-g1-runtime"
+      ],
+      "changed_files": 2
+    },
+    {
+      "name": "astro-economy",
+      "manifest": "crates/astro-economy/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-facecloud",
+      "manifest": "crates/astro-facecloud/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-dav",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 5
+    },
+    {
+      "name": "astro-g1-runtime",
+      "manifest": "crates/astro-g1-runtime/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-lifecycle",
+      "manifest": "crates/astro-lifecycle/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-crypto",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-nostr-proto",
+      "manifest": "crates/astro-nostr-proto/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 1
+    },
+    {
+      "name": "astro-p2p",
+      "manifest": "crates/astro-p2p/Cargo.toml",
+      "dependencies": [
+        "astro-dav"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-plugins",
+      "manifest": "crates/astro-plugins/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-relay",
+      "manifest": "crates/astro-relay/Cargo.toml",
+      "dependencies": [
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-sync",
+      "manifest": "crates/astro-sync/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-dav",
+        "astro-db",
+        "astro-facecloud",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-ui",
+      "manifest": "crates/astro-ui/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-db"
+      ],
+      "changed_files": 42
+    }
+  ],
+  "protocol_mentions": [
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 84,
+      "excerpt": "1. **Nostr + IPFS sont les SEULES sources de vérité :**"
+    },
+    {
+      "protocol": "IPFS",
+      "path": "CLAUDE.md",
+      "line": 84,
+      "excerpt": "1. **Nostr + IPFS sont les SEULES sources de vérité :**"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 89,
+      "excerpt": "   - Racine Capitaine : Clé SSH `~/.ssh/id_ed25519` → SHA-512 → Salt/Pepper → Scrypt → Graine Ed25519 maîtresse (PeerID IPFS 12D3Koo = Ğ1 = Nostr secp256k1 via SHA-256)."
+    },
+    {
+      "protocol": "IPFS",
+      "path": "CLAUDE.md",
+      "line": 89,
+      "excerpt": "   - Racine Capitaine : Clé SSH `~/.ssh/id_ed25519` → SHA-512 → Salt/Pepper → Scrypt → Graine Ed25519 maîtresse (PeerID IPFS 12D3Koo = Ğ1 = Nostr secp256k1 via SHA-256)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 91,
+      "excerpt": "   - Tolérance aux pannes : Partage de secret de Shamir SSSS 2-sur-3 (Part 1 QR imprimé, Part 2 station locale, Part 3 amis N¹ via NIP-59)."
+    },
+    {
+      "protocol": "IPFS",
+      "path": "CLAUDE.md",
+      "line": 94,
+      "excerpt": "   - `ẐEN` (Production coopérative privée) : `UPLANETNAME` = SHA-256(swarm.key). 1 Ẑen = 1 €/$/£... Kubo strictement interdit (libp2p PSK isolé)."
+    },
+    {
+      "protocol": "UENC",
+      "path": "CLAUDE.md",
+      "line": 96,
+      "excerpt": "5. **Format Chiffré uCloud UENC v2 :**"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 101,
+      "excerpt": "### 2. PROTOCOLE NOSTR & PARE-FEU SOCIAL (TIERED GATED RELAY)"
+    },
+    {
+      "protocol": "WebDAV",
+      "path": "CLAUDE.md",
+      "line": 103,
+      "excerpt": "- Le relais interne WebSocket et l'API HTTP/WebDAV/CardDAV/CalDAV partagent le **même port unique** (pas de multi-ports complexes)."
+    },
+    {
+      "protocol": "CardDAV",
+      "path": "CLAUDE.md",
+      "line": 103,
+      "excerpt": "- Le relais interne WebSocket et l'API HTTP/WebDAV/CardDAV/CalDAV partagent le **même port unique** (pas de multi-ports complexes)."
+    },
+    {
+      "protocol": "CalDAV",
+      "path": "CLAUDE.md",
+      "line": 103,
+      "excerpt": "- Le relais interne WebSocket et l'API HTTP/WebDAV/CardDAV/CalDAV partagent le **même port unique** (pas de multi-ports complexes)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 104,
+      "excerpt": "- Authentification NIP-42 systématique sur WebSocket et NIP-98 sur les requêtes HTTP d'API."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 107,
+      "excerpt": "  - Cercle N¹ (Amis réciproques dans kind 3) : Kinds 21/22 (Vidéos en copie privée avec tag NIP-70 `[\"-\"]`), réplication automatique FaceCloud, sauvegarde de la Part 3 Shamir."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "CLAUDE.md",
+      "line": 108,
+      "excerpt": "  - Écriture réservée aux membres du cercle social ($N^1 \\cup N^2$), **sauf** pour le kind 1059 (Gift Wrap NIP-59) ciblant un compte hébergé qui est TOUJOURS admis sans auth préalable (porte d'entrée réseau)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "RELEASE_NOTES.md",
+      "line": 42,
+      "excerpt": "- Signalisation chiffrée comme un message privé (NIP-59, enveloppe qui expire) ; seul un proche fait sonner."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "RELEASE_NOTES.md",
+      "line": 44,
+      "excerpt": "- **Présence** sur option (Mon compte → Visio) : vos amis réciproques voient « en ligne » ou « en appel » ; battements NIP-101 (kind 24315) vers les autres stations ; rien n'est stocké."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "RELEASE_NOTES.md",
+      "line": 49,
+      "excerpt": "- Jargon retiré des écrans des membres (NIP-65, kind 0, NIP-05) ; l'index A–Z du carnet ne masque plus la liste sur téléphone."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-crypto/src/nip59.rs",
+      "line": 97,
+      "excerpt": "/// Comme [`gift_wrap`], mais l'enveloppe porte une expiration (NIP-40) : le relai l'oublie passé `expires_at`. Pour les"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-crypto/src/nip59.rs",
+      "line": 102,
+      "excerpt": "pub fn gift_wrap_expiring(sender_secret: &[u8; 32], recipient_hex: &str, rumor: &Rumor, now: u64, expires_at: u64) -> Result<Event, Nip59Error> {"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-crypto/src/nip59.rs",
+      "line": 106,
+      "excerpt": "fn wrap_with(sender_secret: &[u8; 32], recipient_hex: &str, rumor: &Rumor, now: u64, expires_at: Option<u64>) -> Result<Event, Nip59Error> {"
+    },
+    {
+      "protocol": "IPFS",
+      "path": "crates/astro-crypto/src/nip59.rs",
+      "line": 179,
+      "excerpt": "        for marker in [&b\"ipfs\"[..], b\"bafkrei\", b\"\\\"cid\\\"\"] {"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-facecloud/src/review.rs",
+      "line": 46,
+      "excerpt": "/// Range des visages dans une personne : ils prennent `name`, la fiche `contact` (UID vCard) et la clé Nostr de la personne."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-nostr-proto/src/lib.rs",
+      "line": 54,
+      "excerpt": "    /// Signal d'appel visio (offre, réponse, raccrochage…) : **rumeur privée** emballée en NIP-59, jamais publiée en clair."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-ui/src/api.rs",
+      "line": 1395,
+      "excerpt": "/// Où ranger des visages : une fiche choisie, ou un nom (et la clé Nostr de la personne, si elle est connue)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "crates/astro-ui/src/api.rs",
+      "line": 1400,
+      "excerpt": "    /// Clé Nostr (64 hex, minuscules)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "docs/GUIDE.md",
+      "line": 488,
+      "excerpt": "**Rapprochement photo ↔ fiche ↔ MULTIPASS.** Une fiche relie un visage à un MULTIPASS de deux façons : la fiche porte une clé Nostr (`X-NOSTR-PUBKEY` ou `X-NOSTR-NPUB`, en hexadécimal ou `npub1…`), ou son email est celui"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/address_book.rs",
+      "line": 177,
+      "excerpt": "    /// Lignes de l'index : chemin, champs, me, clé Nostr, lien, avertissement, UID."
+    },
+    {
+      "protocol": "WebRTC",
+      "path": "src/chat.rs",
+      "line": 11,
+      "excerpt": "//! - **Appels visio** : la sonnerie et la poignée de main WebRTC (offre, réponse, raccrochage, refus, occupé) voyagent par le"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/chat.rs",
+      "line": 449,
+      "excerpt": "        let rumor = nip59::Rumor { pubkey: owner.to_owned(), created_at: created, kind: kind::CALL_SIGNAL, tags: vec![vec![\"p\".into(), peer.clone()]], content: content.to_string() };"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/chat.rs",
+      "line": 451,
+      "excerpt": "        let wrap = nip59::gift_wrap_expiring(&secret, &peer, &rumor, created, created + CALL_TTL).map_err(|e| ChatError::Invalid(e.to_string()))?;"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/chat.rs",
+      "line": 466,
+      "excerpt": "    async fn handle_call(&self, owner: &str, sender: &str, rumor: &nip59::Rumor) -> usize {"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/chat.rs",
+      "line": 528,
+      "excerpt": "    /// Nom à montrer pour `peer` : sa fiche de contact, sinon son profil Nostr, sinon le début de sa clé."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/chat.rs",
+      "line": 536,
+      "excerpt": "                    \"SELECT COALESCE((SELECT json_extract(f.fields, '$.name') FROM contact_cards f WHERE f.owner_hex = ?1 AND json_extract(f.fields, '$.nostr') = ?2 LIMIT 1), \\"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/chat.rs",
+      "line": 590,
+      "excerpt": "    /// Boucle de réception jusqu'à l'arrêt. Une enveloppe NIP-59 acceptée par le relai réveille la lecture **tout de suite** :"
+    },
+    {
+      "protocol": "Duniter",
+      "path": "src/constellation.rs",
+      "line": 41,
+      "excerpt": "    /// Numéro du bloc ; négatif pour l'historique de la Ğ1 v1 repris à la genèse de Duniter v2s."
+    },
+    {
+      "protocol": "CardDAV",
+      "path": "src/identity_links.rs",
+      "line": 189,
+      "excerpt": "        if let Err(e) = ingest::replace(&self.dav, owner, carddav::CONTACTS_DIR, &file, Some(\"text/vcard\"), std::io::Cursor::new(vcard::set_property(text, \"UID\", Some(&uid), now()).into_bytes())).await {"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/identity_links.rs",
+      "line": 297,
+      "excerpt": "    /// Relie les visages à leur fiche par la clé Nostr (une seule fiche pour cette clé ; vos propres visages à « Ma fiche »),"
+    },
+    {
+      "protocol": "IPFS",
+      "path": "src/init.rs",
+      "line": 404,
+      "excerpt": "    // Un uCloud repris d'Astroport.ONE (import-ucloud) n'a ses blobs que dans IPFS : sans --kubo, il devient illisible."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/presence.rs",
+      "line": 1,
+      "excerpt": "//! Présence visio (« en ligne », « en appel ») entre amis mutuels, **sur option** (NIP-101, kind 24315)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/presence.rs",
+      "line": 4,
+      "excerpt": "//! choisi d'être joignable (paramètre 31903 `d=visio`, `{\"reachable\": true}` : une option du membre vit dans Nostr, pas sur"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/presence.rs",
+      "line": 25,
+      "excerpt": "/// Statuts reconnus (NIP-101)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/register.rs",
+      "line": 546,
+      "excerpt": "        let r = Registrar::new(db.clone(), dir.join(\"nostr\"), \"0\".repeat(64), Arc::new(|hex| format!(\"jeton-{}\", &hex[..8])), Limits::default()).require_captain();"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/register.rs",
+      "line": 550,
+      "excerpt": "        assert!(!dir.join(\"nostr\").exists(), \"rien n'est créé\");"
+    },
+    {
+      "protocol": "IPFS",
+      "path": "src/serve.rs",
+      "line": 467,
+      "excerpt": "        let msg = format!(\"{n} fichier(s) de l'uCloud repris d'Astroport.ONE ne sont que dans IPFS : sans --kubo (ex. --kubo http://127.0.0.1:5001) ils restent illisibles (fiches, photos, miniatures)\");"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/serve.rs",
+      "line": 878,
+      "excerpt": "        println!(\"chat : conversations privées 1 à 1 (NIP-17), réception dès l'arrivée (contrôle toutes les 3 s) ; présence visio sur option\");"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/sponsor.rs",
+      "line": 4,
+      "excerpt": "//!    son relai, et en ẐEN la `swarm.key`. L'offre est chiffrée (NIP-44 v2) avec une clé tirée pour l'occasion, puis"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/sponsor.rs",
+      "line": 44,
+      "excerpt": "    /// Relai Nostr de la marraine (`wss://…`)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/sponsor.rs",
+      "line": 90,
+      "excerpt": "    let sealed = astro_crypto::nip44::encrypt(&key, &plain).map_err(|e| format!(\"chiffrement : {e}\"))?;"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/sponsor.rs",
+      "line": 119,
+      "excerpt": "    let plain = Zeroizing::new(astro_crypto::nip44::decrypt(&token.key, sealed).map_err(|_| \"offre indéchiffrable : le jeton ne correspond pas\".to_owned())?);"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "src/ui_backend.rs",
+      "line": 962,
+      "excerpt": "                // La fiche reliée donne aussitôt sa clé Nostr aux visages (et partage leurs photos, amis réciproques)."
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/chat.rs",
+      "line": 226,
+      "excerpt": "    let old = astro_crypto::nip59::Rumor { pubkey: alice.clone(), created_at: 1_700_000_000, kind: astro_nostr_proto::kind::CALL_SIGNAL, tags: vec![vec![\"p\".into(), bob.clone()]], content: json!({ \"type\": \"offer\", \"call\""
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/chat.rs",
+      "line": 227,
+      "excerpt": "    let wrap = astro_crypto::nip59::gift_wrap(&ALICE, &bob, &old, 1_700_000_000).unwrap();"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/chat.rs",
+      "line": 307,
+      "excerpt": "            evs.iter().filter_map(|w| astro_crypto::nip59::unwrap(&EVE, w).ok()).map(|o| serde_json::from_str::<serde_json::Value>(&o.rumor.content).unwrap()).find(|v| v[\"call\"] == call).unwrap()"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/chat.rs",
+      "line": 388,
+      "excerpt": "    // Un autre kind ne réveille pas ; une enveloppe NIP-59, si."
+    },
+    {
+      "protocol": "CardDAV",
+      "path": "tests/identity_links.rs",
+      "line": 212,
+      "excerpt": "    let text = String::from_utf8(astro_dav::carddav::read_file(&b.dav, &alice, \"/Contacts/marie1.vcf\").await.unwrap()).unwrap();"
+    },
+    {
+      "protocol": "CardDAV",
+      "path": "tests/identity_links.rs",
+      "line": 238,
+      "excerpt": "    let text = String::from_utf8(astro_dav::carddav::read_file(&b.dav, &alice, \"/Contacts/marie2.vcf\").await.unwrap()).unwrap();"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/presence.rs",
+      "line": 102,
+      "excerpt": "async fn a_remote_mutual_friend_receives_a_nip101_heartbeat_and_only_while_reachable() {"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/presence.rs",
+      "line": 115,
+      "excerpt": "    assert_eq!(ev.tags, vec![vec![\"p\".to_owned(), carol.clone()], vec![\"status\".to_owned(), \"online\".to_owned()]], \"format NIP-101 : destinataires, puis un statut\");"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/ui_e2e.rs",
+      "line": 1372,
+      "excerpt": "    let registrar = Arc::new(astroportd::register::Registrar::new(db.clone(), dir.join(\"game/nostr\"), \"0\".repeat(64), Arc::new(|hex| derive_dav_token(SECRET, hex)), astroportd::register::Limits::default()).require_captai"
+    },
+    {
+      "protocol": "Nostr",
+      "path": "tests/ui_e2e.rs",
+      "line": 1514,
+      "excerpt": "    let registrar = Arc::new(astroportd::register::Registrar::new(b.db.clone(), b.dir.join(\"nostr\"), \"0\".repeat(64), Arc::new(|hex| derive_dav_token(SECRET, hex)), astroportd::register::Limits::default()));"
+    }
+  ],
+  "method": "Mentions dans les lignes ajoutées et dépendances Cargo directes ; aucun test exécuté, aucun état de déploiement déduit. Source locale uniquement.",
+  "synchronization": "local-only"
+}

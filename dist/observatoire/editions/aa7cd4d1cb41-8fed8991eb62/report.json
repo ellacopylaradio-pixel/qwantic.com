@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "generated_at": "2026-11-07T00:33:57+00:00",
+  "base": "aa7cd4d1cb4180cefe92a93981a5c223acf5c11b",
+  "head": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+  "commits": [
+    {
+      "sha": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+      "date": "2026-11-03T21:06:29+01:00",
+      "subject": "Tu es l'Architecte Principal et Lead Product Engineer d'ASTROPORT.ONE, un écosystème logiciel souverain, décentralisé et sans tiers de confiance, propulsé par le démon tout-en-un écrit en Rust : `astroportd`."
+    }
+  ],
+  "files": [
+    {
+      "status": "M",
+      "path": "CLAUDE.md"
+    }
+  ],
+  "modules": [
+    {
+      "name": "astro-bro",
+      "manifest": "crates/astro-bro/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-crypto",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-core",
+      "manifest": "crates/astro-core/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-crypto",
+      "manifest": "crates/astro-crypto/Cargo.toml",
+      "dependencies": [
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-dav",
+      "manifest": "crates/astro-dav/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-db",
+      "manifest": "crates/astro-db/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-duniter",
+      "manifest": "crates/astro-duniter/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-g1-runtime"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-economy",
+      "manifest": "crates/astro-economy/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-facecloud",
+      "manifest": "crates/astro-facecloud/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-dav",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-g1-runtime",
+      "manifest": "crates/astro-g1-runtime/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-lifecycle",
+      "manifest": "crates/astro-lifecycle/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-crypto",
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-nostr-proto",
+      "manifest": "crates/astro-nostr-proto/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-p2p",
+      "manifest": "crates/astro-p2p/Cargo.toml",
+      "dependencies": [
+        "astro-dav"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-plugins",
+      "manifest": "crates/astro-plugins/Cargo.toml",
+      "dependencies": [],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-relay",
+      "manifest": "crates/astro-relay/Cargo.toml",
+      "dependencies": [
+        "astro-db",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-sync",
+      "manifest": "crates/astro-sync/Cargo.toml",
+      "dependencies": [
+        "astro-crypto",
+        "astro-dav",
+        "astro-db",
+        "astro-facecloud",
+        "astro-nostr-proto"
+      ],
+      "changed_files": 0
+    },
+    {
+      "name": "astro-ui",
+      "manifest": "crates/astro-ui/Cargo.toml",
+      "dependencies": [
+        "astro-core",
+        "astro-db"
+      ],
+      "changed_files": 0
+    }
+  ],
+  "protocol_mentions": [],
+  "method": "Mentions dans les lignes ajoutées et dépendances Cargo directes ; aucun test exécuté, aucun état de déploiement déduit. Source locale uniquement.",
+  "synchronization": "local-only"
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=Qwantic — suivi Git astroportd et illustrations d’architecture
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pi/workspace/qwantic.com
+ExecStart=/usr/bin/python3 /home/pi/workspace/qwantic.com/workers/pipeline.py
+TimeoutStartSec=10min
+UMask=0022
+NoNewPrivileges=yes

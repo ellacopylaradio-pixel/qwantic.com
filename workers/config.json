@@ -1,0 +1,9 @@
+{
+  "remote": "https://github.com/papiche/astroportd.git",
+  "branch": "main",
+  "seed": "/home/pi/workspace/astroportd",
+  "state": "/home/pi/.local/state/qwantic-workers",
+  "output": "dist/observatoire",
+  "history_limit": 30,
+  "initial_commits": 3
+}

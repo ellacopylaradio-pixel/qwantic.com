@@ -1,0 +1,10 @@
+[Unit]
+Description=Actualiser l’observatoire astroportd toutes les 24 heures
+
+[Timer]
+OnCalendar=*-*-* 04:00:00
+Persistent=true
+Unit=qwantic-observatoire.service
+
+[Install]
+WantedBy=timers.target

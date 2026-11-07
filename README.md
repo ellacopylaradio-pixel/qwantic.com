@@ -23,7 +23,8 @@ GIT_SSH_COMMAND='ssh -i /home/pi/.ssh/qwantic_github_ed25519 -o IdentitiesOnly=y
 Le nom de dépôt est proposé, non vérifié. Aucun dépôt distant n’a été créé dans cette session.
 
 ## Hébergement sur libra
-Voir `docs/hebergement.md`. Le site n’est pas encore mis en production.
+Voir `docs/hebergement.md`. Le serveur statique Docker est démarré ; le domaine
+et le certificat HTTPS restent à raccorder dans Nginx Proxy Manager.
 
 ## Licence
 Code et illustration : MIT, voir LICENSE. Kit Anatomy : licence conservée dans vendor/anatomy/LICENSE.

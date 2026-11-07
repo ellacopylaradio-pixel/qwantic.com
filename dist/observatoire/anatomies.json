@@ -1,0 +1,226 @@
+[
+  {
+    "id": "engine",
+    "title": "Le moteur de la station",
+    "role": "Comprendre comment les services partagent un index local.",
+    "mechanism": "Trois pompes et un réservoir de projection rejouable.",
+    "status": "planned",
+    "limit": "Le replay des projections ne remplace pas les clés ni les états locaux non rejouables.",
+    "sources": [
+      {
+        "file": "crates/astro-db/src/writer.rs",
+        "symbol": "Writer",
+        "line": 116,
+        "sha256": "a09a6a7a31a78598ca5640f12a06fb080afc653341c7c041221827d08cbe5c45",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-db/src/schema.sql",
+        "symbol": null,
+        "line": 1,
+        "sha256": "565abd1f777be4fa30c7b2112f8186b596e85aa816aa66845c139f6f67686e72",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  },
+  {
+    "id": "multipass",
+    "title": "L’identité et les parts de secours",
+    "role": "Retrouver son compte avec deux parts, sans dépendre de l’ancienne station.",
+    "mechanism": "Un dérivateur et un diviseur à trois parts dont deux suffisent.",
+    "status": "planned",
+    "limit": "Les cinq variantes KeyFormula sont des alternatives, pas cinq opérations KDF successives. PBKDF2 LOVE est un étirement distinct. Le secret partagé est SALT/PEPPER ; les métadonnées d’une part ne sont pas secrètes.",
+    "sources": [
+      {
+        "file": "crates/astro-core/src/kdf.rs",
+        "symbol": "duniter_seed",
+        "line": 65,
+        "sha256": "b3276276db2095f0cde619d8bf8e94a23758b3c1dc478d22138894fec578826b",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-core/src/formula.rs",
+        "symbol": "credentials",
+        "line": 51,
+        "sha256": "1f20d2652360972b6311e665f70a2e60cbe42787cc615c7082860664dde3a436",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-lifecycle/src/share.rs",
+        "symbol": "combine",
+        "line": 211,
+        "sha256": "c00a0d094033d261c45a7fcf1091dadab489642d9fa048b7bd5c888c9b6fda33",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  },
+  {
+    "id": "relay",
+    "title": "Le sas social Nostr",
+    "role": "Comprendre qui peut lire et publier.",
+    "mechanism": "Un sas à permissions avec une entrée gift wrap contrôlée.",
+    "status": "planned",
+    "limit": "L’exception d’amorçage kind 1059 vise un compte hébergé ; ce n’est pas un contournement général du pare-feu.",
+    "sources": [
+      {
+        "file": "crates/astro-relay/src/policy.rs",
+        "symbol": "can_read",
+        "line": 274,
+        "sha256": "c2a8522592c4e527fe0bb0ccec7fd8fc1c35f0b7a47835b590f46a1e88bc8caf",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-relay/src/policy.rs",
+        "symbol": "write_decision",
+        "line": 286,
+        "sha256": "c2a8522592c4e527fe0bb0ccec7fd8fc1c35f0b7a47835b590f46a1e88bc8caf",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  },
+  {
+    "id": "uenc",
+    "title": "Le scellement des fichiers",
+    "role": "Comprendre le découpage et l’authentification d’un fichier stocké.",
+    "mechanism": "Un convoyeur à blocs, une presse et un sceau par bloc.",
+    "status": "interactive",
+    "limit": "Calcul du format, pas chiffrement dans le navigateur. Nonce de 12 octets : préfixe 7 + compteur 4 + dernier 1. L’en-tête de 14 octets est authentifié comme AAD. Le tag fait 16 octets, en AES-GCM ou ChaCha20-Poly1305.",
+    "sources": [
+      {
+        "file": "crates/astro-crypto/src/uenc/v2.rs",
+        "symbol": "encrypt_stream",
+        "line": 52,
+        "sha256": "8f7c466f5123af653149592065223ee49ff25fe14461671622e61d74efa6a826",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-crypto/src/uenc/v2.rs",
+        "symbol": "nonce",
+        "line": 43,
+        "sha256": "8f7c466f5123af653149592065223ee49ff25fe14461671622e61d74efa6a826",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-crypto/src/uenc/v2.rs",
+        "symbol": "decrypt_range_after_head",
+        "line": 172,
+        "sha256": "8f7c466f5123af653149592065223ee49ff25fe14461671622e61d74efa6a826",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  },
+  {
+    "id": "facecloud",
+    "title": "La table de tri des photos",
+    "role": "Comprendre la reconnaissance et la validation des visages.",
+    "mechanism": "Une table optique avec détection, empreintes et casiers.",
+    "status": "planned",
+    "limit": "Les voisins mutuels du clustering des visages ne sont pas les amis réciproques Nostr. Ne pas confondre le regroupement visuel et l’autorisation de partage.",
+    "sources": [
+      {
+        "file": "crates/astro-facecloud/src/board.rs",
+        "symbol": "mutual_knn_groups",
+        "line": 137,
+        "sha256": "51d182708374b7d729593ec6ef9b474c8cf970beabc00cae8e185eac86edba8a",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-facecloud/src/scrfd.rs",
+        "symbol": null,
+        "line": 1,
+        "sha256": "c325a8fc5c060d01ead9ec33425261de79942a8d093ce2103e72ba78b7abc990",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-facecloud/src/thumbs.rs",
+        "symbol": null,
+        "line": 1,
+        "sha256": "362c43050f044689c4030b17f24107e24a30ca76ba7686d778551c3812ad27ae",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  },
+  {
+    "id": "economy",
+    "title": "La répartition du surplus",
+    "role": "Voir où va chaque centime du surplus hebdomadaire.",
+    "mechanism": "Un répartiteur de jetons vers cinq compartiments.",
+    "status": "interactive",
+    "limit": "Modèle de SplitConfig par défaut, pas conseil fiscal ni taux légal universel. La base est le surplus d’exploitation. Les taux du logiciel sont configurables. L’horloge solaire et les tâches de nuit restent à illustrer séparément.",
+    "sources": [
+      {
+        "file": "crates/astro-economy/src/split.rs",
+        "symbol": "allocate",
+        "line": 100,
+        "sha256": "b3a6bf780cdf7f91f492f0fb5982daf2aa34f34a775af6b02c29aedd06173677",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-economy/src/split.rs",
+        "symbol": "is_due",
+        "line": 92,
+        "sha256": "b3a6bf780cdf7f91f492f0fb5982daf2aa34f34a775af6b02c29aedd06173677",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-core/src/solar.rs",
+        "symbol": "equation_of_time_minutes",
+        "line": 78,
+        "sha256": "da052e407fdf1af54882f3c7f5e2921092a61707f870d9bb529eac03a3a4ca94",
+        "unchanged": true
+      },
+      {
+        "file": "src/solar_cron.rs",
+        "symbol": null,
+        "line": 1,
+        "sha256": "83fc556eb94450520a111e0a8fa361a05b8b2974f834a96e4722ebc3ffb9d79f",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  },
+  {
+    "id": "dragon",
+    "title": "Les échanges entre stations",
+    "role": "Comprendre les choix de service et l’accès au réseau privé.",
+    "mechanism": "Un aiguillage de tunnels et une porte à clé de constellation.",
+    "status": "planned",
+    "limit": "Le score sélectionne selon le mode power, closest ou random ; il ne décide pas seul de tous les échanges. La présence d’une PSK ne prouve pas à elle seule l’étanchéité de tous les services, notamment Kubo.",
+    "sources": [
+      {
+        "file": "crates/astro-p2p/src/routing.rs",
+        "symbol": "power_score",
+        "line": 23,
+        "sha256": "d8777852fa3c3e246bf8945f153620283e78617fffd29605c89b0dbb7485fffa",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-p2p/src/tunnel.rs",
+        "symbol": null,
+        "line": 1,
+        "sha256": "33a4605cf048d5ed5c7704145499b64ed2e8e080bd0329518b3b0d317c1d72d4",
+        "unchanged": true
+      },
+      {
+        "file": "crates/astro-p2p/src/psk.rs",
+        "symbol": "parse_swarm_key",
+        "line": 13,
+        "sha256": "25d5d04e4ae9d6158511de6dd6742e0a9d559ec192d4b12a4c45052fdded0dac",
+        "unchanged": true
+      }
+    ],
+    "validated_commit": "8fed8991eb628cab85cb0ca5b9ae3f28d6466203",
+    "review_required": false
+  }
+]

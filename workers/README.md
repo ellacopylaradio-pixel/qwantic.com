@@ -40,3 +40,6 @@ Python 3.10+, Git et Deno installé sur libra sont requis ; pas de dépendances 
 `python3 -m unittest discover -s tests -v` vérifie l’extraction du diff, les dépendances hors tests, les lignes de preuve et l’échappement des extraits HTML. Le rendu navigateur reste à vérifier sur libra : Chromium échoue au démarrage dans l’environnement de préparation.
 
 Cette version révèle les changements structurels de façon déterministe. Elle ne prétend pas expliquer automatiquement la sémantique de chaque patch. Les annonces de résultats, déploiements ou performances nécessitent une revue humaine.
+
+## Anatomies fondatrices
+`anatomies.html` complète l’observatoire avec un catalogue des sept vues. UENC et la répartition du surplus ont des modèles pédagogiques interactifs ; les cinq autres vues sont explicitement des spécifications à réaliser. Chaque modèle est rattaché à un commit et à des empreintes de fichiers : si une source change, le rendu indique « à revalider » et désactive le calcul. Voir `docs/anatomies.md` pour les limites et la future intégration astro-ui.
